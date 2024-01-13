@@ -1,12 +1,12 @@
 <div class="sticky top-3 m-auto max-w-[30%] backdrop-blur-lg">
     <div class="flex justify-between items-center gap-10 m-2 p-2 rounded-2xl shadow-2xl bg-gray-700 text-white">
-        <div class="h-full hover:bg-gray-100 hover:rounded-lg hover:text-black p-2" [class.bg-gray-100]="about()"  [class.rounded-lg]="about()" [class.text-black]="about()">
+        <div routerLink="" routerLinkActive="bg-gray-100 rounded-lg text-black" [routerLinkActiveOptions]="{ exact: true }" class="h-full hover:bg-gray-100 hover:rounded-lg hover:text-black hover:cursor-pointer p-2">
             <mat-icon class="material-symbols-outlined">emoji_people</mat-icon>
         </div>
-        <div class="h-full hover:bg-gray-100 hover:rounded-lg hover:text-black p-2">
-            <mat-icon class="material-symbols-outlined"> cases</mat-icon>
+        <div routerLink="projects" routerLinkActive="bg-gray-100 rounded-lg text-black" class="h-full hover:bg-gray-100 hover:rounded-lg hover:text-black hover:cursor-pointer p-2">
+            <mat-icon class="material-symbols-outlined">cases</mat-icon>
         </div>
-        <div class="h-full hover:bg-gray-100 hover:rounded-lg hover:text-black p-2">
+        <div routerLink="contact" routerLinkActive="bg-gray-100 rounded-lg text-black" class="h-full hover:bg-gray-100 hover:rounded-lg hover:text-black hover:cursor-pointer p-2">
             <mat-icon class="material-symbols-outlined">forward_to_inbox</mat-icon>
         </div>
     </div>

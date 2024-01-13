@@ -1,6 +1,5 @@
 import { Component, inject, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon'
-import { ActiveComponentService } from '../../shared/services/active-component.service';
 
 @Component({
   selector: 'app-about-me',
@@ -11,11 +10,5 @@ import { ActiveComponentService } from '../../shared/services/active-component.s
 })
 
 export class AboutMeComponent {
-  activeComponentService = inject(ActiveComponentService)
-
-  ngAfterViewInit() {
-    this.activeComponentService.setAboutComponentActive()
-  }
-
 
 }
