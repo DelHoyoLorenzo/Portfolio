@@ -1,0 +1,11 @@
+.custom {
+    transition: box-shadow 0.7s ease-in-out;
+}
+
+.custom:hover {
+    box-shadow: 0 0 10px rgba(199, 164, 164, 0.5);
+}
+
+.blurred {
+    width: 100vw;
+}
