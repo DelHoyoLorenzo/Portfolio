@@ -7,6 +7,5 @@
 }
 
 .blurred {
-    background-color: red;
-    display: none;
+    transform: translateY(-160px);
 }

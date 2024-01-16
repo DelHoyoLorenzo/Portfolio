@@ -1,12 +1,15 @@
-import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ElementRef, HostListener, Renderer2, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon'
 import { RouterLinkWithHref, RouterLinkActive } from '@angular/router';
+
+
 import * as Aos from 'aos'
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [ MatIconModule, RouterLinkWithHref, RouterLinkActive],
+  imports: [CommonModule, MatIconModule, RouterLinkWithHref, RouterLinkActive],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css'
 })
@@ -19,15 +22,17 @@ export class NavBarComponent {
   handleScroll() {
     let scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
 
+
     if (scrollPercentage >= 10) {
       this.isBlurred = true;
-    } else if (scrollPercentage === 0) {
-      this.isBlurred = false;
+    } 
+
+    if(scrollPercentage === 0) {
+        this.isBlurred = false;
     }
   }
 
   ngOnInit() {
     Aos.init()
   }
-
 }
