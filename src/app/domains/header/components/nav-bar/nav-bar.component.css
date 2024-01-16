@@ -7,5 +7,6 @@
 }
 
 .blurred {
-    width: 100vw;
+    background-color: red;
+    display: none;
 }

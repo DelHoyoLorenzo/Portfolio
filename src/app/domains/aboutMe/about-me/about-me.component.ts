@@ -1,5 +1,6 @@
 import { Component, inject, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon'
+import * as Aos from 'aos'
 
 @Component({
   selector: 'app-about-me',
@@ -10,5 +11,7 @@ import { MatIconModule } from '@angular/material/icon'
 })
 
 export class AboutMeComponent {
-
+  ngOnInit() {
+    Aos.init()
+  }
 }

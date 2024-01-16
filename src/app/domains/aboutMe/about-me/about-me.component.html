@@ -1,5 +1,5 @@
 <div class="flex flex-col m-auto w-[50%]">
-    <div class="flex items-center gap-10 mt-10">
+    <div data-aos="fade-left" data-aos-duration="3000" class="flex items-center gap-10 mt-10">
         <img class="border-2 shadow-1xl rounded-2xl h-auto w-44" src="../../../../assets/fotodeperfil(fondo blanco).png" alt="profilePicture">
         <div class="h-auto p-5 rounded-2xl shadow-xl bg-[#FAF0E6]">
             <h1 class="text-4xl font-bold py-2">Full Stack Web Developer</h1>
@@ -9,40 +9,64 @@
             </p>
         </div>
     </div>
-    <div class="flex justify-around items-center my-8 p-5 rounded-2xl shadow-xl bg-yellow-100">
-        <mat-icon class="">near_me</mat-icon>
+    <div data-aos="fade-right" data-aos-duration="3000" class="flex justify-around items-center my-8 p-5 rounded-2xl shadow-xl bg-yellow-100">
+        <!-- <mat-icon class="">near_me</mat-icon> -->
+        <img class="h-16" src="https://www.svgrepo.com/show/530236/location.svg" alt="location icon" />
         <h1 class="text-2xl font-bold">Mar del Plata, Argentina</h1>
         <img class="rounded-md h-20" src="../../../../assets/argentinaFlag.png" alt="argentinian flag"/>
     </div>
 
     <div>
-        <div class="flex items-center gap-2 my-2">
-            <mat-icon class="text-white">
-                school
-            </mat-icon>
-            <h2 class="font-semibold text-white text-3xl">Education</h2>
+        <div class="flex justify-start items-center gap-2 my-2 ">
+            <div class="flex items-center border-b-2 border-white rounded-md text-white p-1">
+                <img style="color: aliceblue;" class="h-20 text-white" src="https://www.svgrepo.com/show/438397/college.svg" alt="Education logo" />
+                <h2 class="font-semibold text-3xl">Education</h2>
+            </div>
         </div>
-        <div class="rounded-lg p-5 bg-yellow-100">
-            <h2>2024</h2>
-            <h2>Angular 17</h2>
-            <h2>Platzi</h2>
-        </div>
-        <div class="rounded-lg p-5 bg-yellow-100">
-            <h2>2024</h2>
-            <h2>Angular 17</h2>
-            <h2>Platzi</h2>
-        </div>
-        <div class="rounded-lg p-5 bg-yellow-100">
-            <h2>2024</h2>
-            <h2>Angular 17</h2>
-            <h2>Platzi</h2>
-        </div>
-        <div>
 
-        </div>
-        <div>
-
-        </div>
+        <div data-aos="fade-up" data-aos-duration="3000" class="my-10 p-10 bg-yellow-100 rounded-2xl">
+            <ol class="items-center sm:flex">
+                <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg viewBox="0 0 24 24" width=26px fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                        <h3 class="text-lg font-semibold">Full Stack Web Development</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Henry Bootcamp</p>
+                    </div>
+                </li>
+                <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg viewBox="0 0 24 24" width=26px fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                        <h3 class="text-lg font-semibold">Chemical Engineering</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2017-2022</time>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">National University of Mar del Plata</p>
+                    </div>
+                </li>
+                <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg viewBox="0 0 24 24" width=26px fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                        <h3 class="text-lg font-semibold">Angular Course</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jan 2024</time>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Platzi</p>
+                    </div>
+                </li>
+            </ol>
+        </div>    
     </div>
 
 </div>
