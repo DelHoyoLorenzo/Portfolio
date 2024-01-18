@@ -9,3 +9,17 @@ html,body{
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.025rem;
 }
+
+
+html::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+html::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 6px;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}

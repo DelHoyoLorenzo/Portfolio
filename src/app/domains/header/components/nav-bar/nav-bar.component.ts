@@ -16,19 +16,21 @@ import * as Aos from 'aos'
 export class NavBarComponent {
   isBlurred = false;
 
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
+  constructor(private renderer: Renderer2, private el: ElementRef) {
+    console.log(this.isBlurred);
+    
+  }
 
   @HostListener('window:scroll', ['$event'])
   handleScroll() {
     let scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
 
-
     if (scrollPercentage >= 10) {
       this.isBlurred = true;
     } 
-
-    if(scrollPercentage === 0) {
-        this.isBlurred = false;
+    
+    if(!document.documentElement.scrollTop){
+      this.isBlurred = false;
     }
   }
 
