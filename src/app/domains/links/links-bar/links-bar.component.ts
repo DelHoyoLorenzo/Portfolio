@@ -11,10 +11,6 @@ import { Component } from '@angular/core';
 export class LinksBarComponent {
   isOver = false
   
-  constructor(){
-    console.log(this.isOver);
-
-  }
   mouseOver(){
     this.isOver = true
   }
