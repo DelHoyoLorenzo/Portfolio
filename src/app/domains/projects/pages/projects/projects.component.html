@@ -1,146 +1,45 @@
-<div class="flex flex-col justify-center items-center w-1/2 m-auto mt-10 custom-font">
-    <div class="flex  items-center justify-between border-2 rounded-2xl text-yellow-50 m-4 custom-font">
-        <h1 class="custom pl-4">Pokemon App</h1>
-        <div class="flex flex-col bg-gray-800 p-2 rounded-r-2xl rounded-l-[2rem] w-[50%]">
-            <svg class="h-4" fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 404.943 404.943" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M391.691,18.284H13.25C5.932,18.284,0,24.219,0,31.536v242.48c0,7.32,5.932,13.252,13.25,13.252h202.674v86.137 c0,5.359,3.229,10.193,8.182,12.244c1.639,0.68,3.359,1.01,5.066,1.01c3.446,0,6.838-1.348,9.372-3.883l96.173-95.508h56.975 c7.32,0,13.252-5.932,13.252-13.252V31.535C404.943,24.218,399.012,18.284,391.691,18.284z M175.97,201.459 c-10.755,13.695-26.845,20.934-46.529,20.934c-7.818,0-14.155-6.336-14.155-14.154c0-7.817,6.337-14.155,14.155-14.155 c11.138,0,18.846-3.212,24.261-10.107c5.248-6.687,7.92-16.295,9.033-26.546h-35.311c-5.862,0-10.616-4.754-10.616-10.617v-45.647 c0-5.864,4.754-10.617,10.616-10.617h45.648c6.529,0,12.473,5.72,13.752,10.963c0.16,0.658,3.947,16.335,4.767,35.868 C192.762,165.205,187.505,186.764,175.97,201.459z M273.875,201.459c-10.752,13.695-26.842,20.934-46.529,20.934 c-7.817,0-14.153-6.336-14.153-14.154c0-7.817,6.336-14.155,14.153-14.155c11.14,0,18.85-3.212,24.263-10.107 c5.249-6.687,7.919-16.295,9.032-26.546h-35.31c-5.864,0-10.614-4.754-10.614-10.617v-45.647c0-5.864,4.75-10.617,10.614-10.617 h45.649c6.527,0,12.471,5.72,13.75,10.963c0.162,0.658,3.945,16.335,4.77,35.868C290.668,165.205,285.414,186.764,273.875,201.459z "></path> </g> </g></svg>
-            <h2 class="p-1 pl-4">"An (SPA) application created with the goal of consolidating what was learned during the web development
-                bootcamp at Henry, individually building the Frontend, Backend, and Database components". </h2>
-        </div>
-    </div>
-</div>
-<!-- <div class="flex flex-col items-center">
-    <img class="w-[70%] rounded-3xl shadow-2xl shadow-black" src="../../../../../assets/landingPokemon.png" alt="pokemon project image" />
-</div> -->
+@if (projectOpened() === 1) {
+    <app-pokemon-app />
+} @else if (projectOpened() === 2) {
+    <app-descuentosya />
+} @else if (projectOpened() === 3) {
+    <app-jobtracker />
+}
 
-<!-- carousel slider-->
+<!-- stepper -->
 
-<div id="gallery" class="relative m-auto w-[70%]" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../../../../assets/landingPokemon.png" class="absolute block max-w-[80%] h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-[2rem]" alt="landing page">
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-        </div>
-    </div>
-
+<div class="fixed right-5 top-[40%]">
     
-<!-- Slider controls -->
-    <!-- <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button> -->
-</div>
+    <ol class="flex flex-col justify-center items-center w-full">
+        <li class="flex flex-col w-full items-center text-blue-600 dark:text-blue-500 after:content-['|'] after:flex after:flex-col after:justify-center after:items-center after:text-5xl after:m-0 after:text-white after:w-full" [ngClass]="{'after:text-black': projectOpened() === 2 || projectOpened() === 3 }">
+            <span (click)="changeProjectOpened(1)" [ngClass]="{'bg-red-700': projectOpened() === 1}" class="bg-white rounded-xl p-1 flex items-center justify-center w-10 h-10 lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0 hover:cursor-pointer hover:scale-110">
+                @if (projectOpened() === 1) {
+                    <span class="absolute -top-2 -left-5 text-5xl text-green-400">.</span>
+                }
+                <img src="https://www.svgrepo.com/show/276264/pokeball-pokemon.svg" alt="pokemon icon">
+            </span>
+        </li>
+        <li class="relative flex flex-col w-full items-center mt-2 after:content-['|'] after:flex after:flex-col after:justify-center after:items-center after:text-5xl after:m-0 after:text-white after:w-full" [ngClass]="{'after:text-black': projectOpened() === 3}">
+            <div class="relative flex justify-center items-center">
+                <span (click)="changeProjectOpened(2)" [ngClass]="{'': projectOpened() === 2}" class="flex items-center justify-center w-15 h-15 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0 hover:cursor-pointer hover:scale-110">
+                    @if (projectOpened() === 2) {
+                        <span class="absolute -top-2 -left-5 text-5xl text-green-400">.</span>
+                    }
+                    <img class="rounded-xl" src="../../../../../assets/bolsaDescuentosYa.jpg" alt="descuentos ya icon">
+                </span>
+            </div>
+        </li>
+        <li class="flex items-center w-full">
+            <span (click)="changeProjectOpened(3)" [ngClass]="{'bg-white': projectOpened() === 3}" class="flex items-center justify-center mt-2 w-10 h-10 bg-gray-100 rounded-xl lg:h-12 lg:w-12 shrink-0 hover:cursor-pointer hover:scale-110">
+                @if (projectOpened() === 3) {
+                    <span class="absolute -top-2 -left-5 text-5xl text-green-400">.</span>
+                }
+                <svg width="32" height="32" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6875 4.64062C16.6875 5.26563 16.5469 5.84375 16.2656 6.375C15.9844 6.90625 15.625 7.39062 15.1875 7.82812C14.75 8.23437 14.25 8.5625 13.6875 8.8125C13.125 9.03125 12.5469 9.14062 11.9531 9.14062C11.3281 9.14062 10.7344 9 10.1719 8.71875C9.64062 8.4375 9.17188 8.07813 8.76562 7.64062C8.35938 7.20312 8.04688 6.70312 7.82812 6.14062C7.60938 5.54688 7.5 4.9375 7.5 4.3125C7.5 3.125 7.92188 2.125 8.76562 1.3125C9.64062 0.5 10.6719 0.09375 11.8594 0.09375C12.4531 0.09375 13.0312 0.21875 13.5938 0.46875C14.1875 0.6875 14.7031 1.01562 15.1406 1.45312C15.6094 1.85937 15.9844 2.34375 16.2656 2.90625C16.5469 3.4375 16.6875 4.01562 16.6875 4.64062ZM17.6719 18.5625C17.6719 21.0625 17.6719 23.5312 17.6719 25.9688C17.6719 28.4062 17.6562 30.875 17.625 33.375C17.625 34.1875 17.6094 35 17.5781 35.8125C17.5469 36.625 17.5312 37.4375 17.5312 38.25C17.5312 38.9688 17.5 39.75 17.4375 40.5938C17.375 41.4375 17.2344 42.25 17.0156 43.0312C16.8281 43.8438 16.5 44.5625 16.0312 45.1875C15.5938 45.8125 14.9688 46.25 14.1562 46.5C13.875 46.5938 13.2812 46.6719 12.375 46.7344C11.4688 46.7969 10.5 46.8438 9.46875 46.875C8.4375 46.9062 7.45312 46.9219 6.51562 46.9219C5.60938 46.9219 5 46.9219 4.6875 46.9219C4.21875 46.9219 3.75 46.9062 3.28125 46.875C2.8125 46.875 2.35938 46.875 1.92188 46.875C1.85938 45.6875 1.73438 44.5469 1.54688 43.4531C1.32812 42.3906 1.125 41.2656 0.9375 40.0781L5.57812 39.6562C6.01562 39.625 6.48438 39.5938 6.98438 39.5625C7.51562 39.5312 8 39.4375 8.4375 39.2812C8.875 39.1562 9.23438 38.9219 9.51562 38.5781C9.79688 38.2656 9.9375 37.7969 9.9375 37.1719C9.9375 35.7344 9.875 34.2969 9.75 32.8594C9.625 31.4219 9.51562 29.9844 9.42188 28.5469C9.26562 26.2031 9.09375 23.8594 8.90625 21.5156C8.71875 19.1719 8.53125 16.7969 8.34375 14.3906C8.6875 14.4219 9.01562 14.4375 9.32812 14.4375C9.64062 14.4375 9.96875 14.4375 10.3125 14.4375C11.5312 14.4375 12.75 14.4062 13.9688 14.3438C15.2188 14.25 16.4531 14.1719 17.6719 14.1094V18.5625ZM45.9844 27.7031L45.1875 35.9531C44.1875 36.0156 43.1875 36.0625 42.1875 36.0938C41.1875 36.1562 40.1875 36.1875 39.1875 36.1875C38.6562 36.1875 37.9531 36.1719 37.0781 36.1406C36.2031 36.1094 35.2969 36.0625 34.3594 36C33.4219 35.9062 32.5312 35.7969 31.6875 35.6719C30.8438 35.5156 30.1719 35.3281 29.6719 35.1094C28.9219 34.7656 28.2969 34.3125 27.7969 33.75C27.3281 33.1875 26.9375 32.5781 26.625 31.9219C26.3125 31.2344 26.0625 30.5156 25.875 29.7656C25.6875 28.9844 25.5469 28.2188 25.4531 27.4688C25.3594 26.75 25.2812 25.9844 25.2188 25.1719C25.1875 24.3281 25.1562 23.4688 25.125 22.5938C25.125 21.7188 25.125 20.875 25.125 20.0625C25.125 19.2188 25.125 18.4375 25.125 17.7188V16.3125H22.2188C22.3438 14.9062 22.4062 13.5156 22.4062 12.1406C22.4375 10.7656 22.5156 9.375 22.6406 7.96875L25.4531 8.0625V1.125C27.2344 1.46875 29 1.65625 30.75 1.6875C32.5312 1.6875 34.3125 1.75 36.0938 1.875L36 9.04688L39.9375 9.28125C39.9375 9.5 39.9375 9.70312 39.9375 9.89062C39.9688 10.0781 39.9844 10.2813 39.9844 10.5C39.9844 11.375 39.9062 12.2344 39.75 13.0781C39.625 13.8906 39.4531 14.7188 39.2344 15.5625H35.8125C35.75 17 35.7031 18.4375 35.6719 19.875C35.6406 21.3125 35.625 22.75 35.625 24.1875C35.625 24.875 35.6406 25.5 35.6719 26.0625C35.7344 26.5938 35.8594 27.0469 36.0469 27.4219C36.2656 27.7969 36.6094 28.0781 37.0781 28.2656C37.5469 28.4531 38.2031 28.5469 39.0469 28.5469C40.2031 28.5469 41.3594 28.4688 42.5156 28.3125C43.6719 28.1562 44.8281 27.9531 45.9844 27.7031Z" fill="#852022" />
+                </svg>
+            </span>
+        </li>
+    </ol>
 
-<!-- boxes -->
-<div class="flex justify-between gap-10 items-center w-1/2 h-28 m-auto mt-10">
-    <!-- <div class="card w-full h-full">
-        <div class="card-inner relative h-full  p-5 rounded-2xl bg-[#FAF0E6]">
-          <div class="card-front absolute p-5 text-2xl font-semibold">
-            Main Skills
-          </div>
-          <div class="card-back absolute flex justify-between items-center gap-2">
-            <img src="https://www.svgrepo.com/show/349419/javascript.svg" class="h-10" alt="javascript icon">
-            <img src="https://www.svgrepo.com/show/439290/react.svg" class="h-10" alt="react icon">
-            <img src="https://www.svgrepo.com/show/439238/nodejs.svg" class="h-10" alt="nodejs icon">
-            <img src="https://www.svgrepo.com/show/353724/express.svg" class="h-10 border-2 border-black p-1 rounded-lg" alt="express icon">
-          </div>
-        </div>
-    </div> -->
-    <div class="card">
-        <div class="content">
-          <div class="back">
-            <div class="back-content text-xl font-semibold">
-              <strong>Main features</strong>
-            </div>
-          </div>
-          <div class="front overflow-y-auto">
-            <div class="flex flex-col p-2 text-black custom-font">
-                <!-- <p>Browse all the pokemons.</p>
-                <p>
-                    Filter by type, origin, and alphabetical order. Sort by power.
-                </p>
-                <p>
-                    Create your own Pokemon with different types, stats, and names.
-                </p>
-                <p>
-                    View each Pokemon's details by clicking on the card.
-                </p> -->
-                <ul class="text-black text-sm">
-                    <li class="m-1">
-                       <span class="font-black rounded-full p-1">.</span>Browse all the pokemons.
-                    </li>
-                    <li class="m-1">
-                        <span class="font-black rounded-full p-1">.</span>Filter by type, origin, and alphabetical order. Sort by power.
-                    </li>
-                    <li class="m-1">
-                        <span class="font-black rounded-full p-1">.</span>Create your own Pokemon with different types, stats, and names.
-                    </li>
-                    <li class="m-1">
-                        <span class="font-black rounded-full p-1">.</span>View each Pokemon's details by clicking on the card.
-                    </li>
-                </ul>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-          <div class="back">
-            <div class="back-content text-xl font-semibold">
-              <strong>Main Technologies</strong>
-            </div>
-          </div>
-          <div class="front">
-            <div class="front-content">
-                <img src="https://www.svgrepo.com/show/349419/javascript.svg" class="h-10" alt="javascript icon">
-                <img src="https://www.svgrepo.com/show/439290/react.svg" class="h-10" alt="react icon">
-                <img src="https://www.svgrepo.com/show/439238/nodejs.svg" class="h-10" alt="nodejs icon">
-                <img src="https://www.svgrepo.com/show/353724/express.svg" class="h-10 border-2 border-black p-1 rounded-lg" alt="express icon">
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-          <div class="back">
-            <div class="back-content text-xl font-semibold">
-              <img class="h-10" src="https://www.svgrepo.com/show/470815/external-link.svg" alt="link for view page">
-            </div>
-          </div>
-          <div class="front">
-            <div class="flex justify-center translate-y-9 gap-10">
-                <a href="https://proyecto-pokemon-rose.vercel.app/" target="_blank">
-                    <img src="https://www.svgrepo.com/show/473990/web.svg" class="h-10" alt="javascript icon">
-                </a>
-                <a href="https://github.com/DelHoyoLorenzo/Proyecto-Pokemon" target="_blank">
-                    <svg class="text-black" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#000000" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                    </svg>
-                </a>
-            </div>
-          </div>
-        </div>
-    </div>
-</div>
 
-<!-- fixed bottom-0 translate-x-[22%] translate-y-40 m-auto w-[70%] -->
+</div>

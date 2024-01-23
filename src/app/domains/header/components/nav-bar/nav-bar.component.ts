@@ -16,10 +16,7 @@ import * as Aos from 'aos'
 export class NavBarComponent {
   isBlurred = false;
 
-  constructor(private renderer: Renderer2, private el: ElementRef) {
-    console.log(this.isBlurred);
-    
-  }
+  constructor(private renderer: Renderer2, private el: ElementRef) {}
 
   @HostListener('window:scroll', ['$event'])
   handleScroll() {
