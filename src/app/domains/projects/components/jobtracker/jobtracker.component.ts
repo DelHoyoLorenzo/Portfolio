@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-jobtracker',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './jobtracker.component.css'
 })
 export class JobtrackerComponent {
-
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }

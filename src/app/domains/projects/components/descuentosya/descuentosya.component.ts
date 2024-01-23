@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-descuentosya',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './descuentosya.component.css'
 })
 export class DescuentosyaComponent {
-
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }
