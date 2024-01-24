@@ -1,0 +1,28 @@
+.title:hover{
+    transform: scale(1.05);
+}
+
+.svg-icon {
+    fill: #000;
+}
+
+.svg-mail-icon{
+    stroke: #000;
+}
+
+.groupOne:hover .svg-icon{
+    fill: #ffffff;
+}
+
+.groupTwo:hover .svg-mail-icon{
+    stroke: #ffffff;
+}
+
+
+.groupThree:hover .svg-icon {
+    fill: #ffffff;
+}
+
+.groupFour:hover .svg-icon{
+    fill: #ffffff;
+}

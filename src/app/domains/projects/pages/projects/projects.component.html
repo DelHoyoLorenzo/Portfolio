@@ -22,11 +22,11 @@
             </li>
             <li class="relative flex flex-col w-full items-center mt-2 after:content-['|'] after:flex after:flex-col after:justify-center after:items-center after:text-5xl after:m-0 after:text-white after:w-full" [ngClass]="{'custom': projectOpened() === 3}">
                 <div class="relative flex justify-center items-center">
-                    <span (click)="changeProjectOpened(2)" [ngClass]="{'bg-red': projectOpened() === 2}" class="flex items-center justify-center w-15 h-15 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0 hover:cursor-pointer hover:scale-110">
+                    <span (click)="changeProjectOpened(2)" [ngClass]="{'bg-red': projectOpened() === 2}" class="flex items-center justify-center h-14 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0 hover:cursor-pointer hover:scale-110">
                         @if (projectOpened() === 2) {
                             <span class="absolute -top-2 -left-5 text-5xl text-green-400">.</span>
                         }
-                        <img class="rounded-xl" src="../../../../../assets/bolsaDescuentosYa.jpg" alt="descuentos ya icon">
+                        <img class="rounded-xl max-h-14" src="../../../../../assets/bolsaDescuentosYa.jpg" alt="descuentosYa icon">
                     </span>
                 </div>
             </li>

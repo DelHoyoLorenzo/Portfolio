@@ -9,6 +9,10 @@
     font-weight: 400;
 }
 
+.font{
+  font-family: cursive;
+}
+
 .custom {
     font-family: 'VT323', monospace;
     font-size: 4rem;
