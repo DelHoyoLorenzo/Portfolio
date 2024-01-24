@@ -34,4 +34,15 @@ export class NavBarComponent {
   ngOnInit() {
     Aos.init()
   }
+
+  descargarCV() {
+      const url = '../../../../../assets/curriculum vitae'; 
+      const nombreArchivo = 'cv.pdf';
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = nombreArchivo;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  }
 }
