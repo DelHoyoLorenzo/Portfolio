@@ -22,7 +22,7 @@ export class NavBarComponent {
   handleScroll() {
     let scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
 
-    if (scrollPercentage >= 10) {
+    if (scrollPercentage >= 2) {
       this.isBlurred = true;
     } 
     

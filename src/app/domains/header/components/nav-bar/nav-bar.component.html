@@ -1,4 +1,4 @@
-<div class="sticky top-3 mx-auto w-[80%] md:w-[30%] transition-transform duration-700 ease-in-out" [class.blurred]="isBlurred">
+<div class="sticky top-3 mx-auto w-[80%] md:w-[35%] transition-transform duration-700 ease-in-out" [class.blurred]="isBlurred">
         <div class="flex justify-center md:justify-around w-full items-center border-[0.5px] gap-10 mb-2 p-2 rounded-xl shadow-2xl bg-gray-800 text-white custom">
             <div routerLink="" routerLinkActive="bg-gray-100 rounded-lg text-black transform translate-x-4" 
             [routerLinkActiveOptions]="{ exact: true }" 
@@ -33,7 +33,7 @@
         </div>
 </div>
 
-<div (click)="descargarCV()" class="group hidden md:absolute top-3 right-10 p-2 rounded-lg border-[0.5px] transition-transform duration-700 ease-in-out hover:cursor-pointer bg-gray-800 hover:bg-gray-100 hover:text-black custom" [class.blurred]="isBlurred">
+<div (click)="descargarCV()" class="group hidden md:fixed md:flex top-3 right-10 p-2 rounded-lg border-[0.5px] hover:cursor-pointer bg-gray-800 hover:bg-gray-100 hover:text-black custom transition-transform duration-700 ease-in-out" [class.blurred]="isBlurred">
     <img class="h-[4.5rem]" src="https://www.svgrepo.com/show/228753/curriculum-information.svg" alt="download cv icon">
     <div class="bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute -bottom-2 translate-y-full left-1/2 -translate-x-1/2">
         <span class="text-white whitespace-nowrap">Download CV</span>

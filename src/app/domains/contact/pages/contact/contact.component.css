@@ -3,26 +3,26 @@
 }
 
 .svg-icon {
-    fill: #000;
-}
-
-.svg-mail-icon{
-    stroke: #000;
-}
-
-.groupOne:hover .svg-icon{
     fill: #ffffff;
 }
 
-.groupTwo:hover .svg-mail-icon{
+.svg-mail-icon{
     stroke: #ffffff;
+}
+
+.groupOne:hover .svg-icon{
+    fill: #000;
+}
+
+.groupTwo:hover .svg-mail-icon{
+    stroke: #000;
 }
 
 
 .groupThree:hover .svg-icon {
-    fill: #ffffff;
+    fill: #000;
 }
 
 .groupFour:hover .svg-icon{
-    fill: #ffffff;
+    fill: #000;
 }

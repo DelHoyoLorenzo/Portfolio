@@ -15,27 +15,13 @@
   font-weight: 300;
 }
 
-.font{
-  font-family: cursive;
-}
-
 .custom-title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  border-width: 2px;
-  border-radius: 1rem;
-  --tw-text-opacity: 1;
-  color: rgb(253 253 234 / var(--tw-text-opacity));
-  margin-top: 4rem;
-  margin-bottom: 1rem;
   transition: transform 0.5s ease-in-out;
-  }
+}
   
-  .custom-title:hover {
+.custom-title:hover {
   transform: scale(1.02) 
-  }
+}
   
   @media(max-width: 768px){
     .custom-title{
@@ -47,107 +33,110 @@
     }
   }
 
-.card {
-  height: 100%;
-  width: 100%;
-  overflow: visible;
-}
-
-.content {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 800ms;
-  box-shadow: 0px 0px 10px 1px #000000ee;
-  border-radius: 1rem;
-}
-
-.front, .back {
-  background-color: #FAF0E6;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  border-radius: 1rem;
-}
-
-@media(max-width: 768px){
-  .card{
-    height: 150px;
+  .card {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
   }
-}
-
-.front::-webkit-scrollbar {
-  width: 12px;
-}
-
-.front::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 6px;
-}
-
-.front::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-.back {
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.back::before {
-  position: absolute;
-  content: ' ';
-  display: block;
-  width: 160px;
-  height: 160%;
-  animation: rotation_481 5000ms infinite linear;
-}
-
-.back-content {
-  position: absolute;
-  width: 99%;
-  height: 99%;
-  background-color: #FAF0E6;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.card:hover .content {
-  transform: rotateY(180deg);
-}
-
-@keyframes rotation_481 {
-  0% {
-    transform: rotateZ(0deg);
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 800ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 1rem;
   }
-
-  0% {
-    transform: rotateZ(360deg);
+  
+  .front, .back {
+    background-color: #FAF0E6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 1rem;
   }
-}
-
-.front {
-  transform: rotateY(180deg);
-  color: white;
-}
-
-.front .front-content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
+  
+  @media(max-width: 768px){
+    .card{
+      height: 150px;
+    }
+  }
+  
+  .front::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .front::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+  }
+  
+  .front::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+    animation: rotation_481 5000ms infinite linear;
+  }
+  
+  .back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #FAF0E6;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes rotation_481 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .front {
+    transform: rotateY(180deg);
+    color: white;
+  }
+  
+  .front .front-content {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
