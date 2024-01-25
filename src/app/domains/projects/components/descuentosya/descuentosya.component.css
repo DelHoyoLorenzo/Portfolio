@@ -37,6 +37,16 @@ transition: transform 0.5s ease-in-out;
 transform: scale(1.02) 
 }
 
+@media(max-width: 768px){
+  .custom-title{
+    flex-direction: column;
+  }
+
+  .custom {
+    font-size: 3rem;
+  }
+}
+
 /* .custom-title:hover .pokemon {
 transition: flex-direction 2s ease-in-out;
 flex-direction: row-reverse;

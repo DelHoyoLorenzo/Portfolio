@@ -36,13 +36,14 @@ export class NavBarComponent {
   }
 
   descargarCV() {
-      const url = '../../../../../assets/curriculum vitae'; 
-      const nombreArchivo = 'cv.pdf';
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = nombreArchivo;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+    const rawUrl = 'https://raw.githubusercontent.com/DelHoyoLorenzo/Portfolio/main/src/assets/curriculum%20vitae/CV-EN%20Lorenzo%20Del%20Hoyo.pdf'; 
+    const fileName = 'CV-Lorenzo Del Hoyo.pdf';
+    
+    const link = document.createElement('a');
+    link.href = rawUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   }
 }

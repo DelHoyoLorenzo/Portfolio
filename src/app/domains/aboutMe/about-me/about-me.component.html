@@ -1,66 +1,135 @@
-<div class="flex flex-col m-auto w-[50%]">
+<div data-aos="fade-left" data-aos-duration="3000" class="flex flex-col m-auto w-[70%] md:w-[50%]">
     
-    <div data-aos="fade-left" data-aos-duration="3000" class="flex items-center gap-10 mt-10">
-        <img class="border-2 shadow-1xl rounded-2xl h-auto w-44" src="../../../../assets/fotodeperfil(fondo blanco).png" alt="profilePicture">
-        <div class="h-auto p-5 rounded-2xl shadow-xl bg-[#FAF0E6]">
-            <h1 class="text-5xl font-bold py-2">Full Stack Web Developer</h1>
-            <h1 class="text-2xl font-medium py-2">Lorenzo Martin Del Hoyo</h1>
-            <p class="font-normal shadow-inner shadow-gray-400 p-2 text-gray-500 rounded-lg custom">
+    <div class="flex md:flex-row flex-col-reverse items-center gap-10 mt-10 w-full">
+        <img class="border-2 shadow-1xl rounded-2xl h-auto w-full md:w-44" src="../../../../assets/fotodeperfil(fondo blanco).png" alt="profilePicture">
+        <div class="h-auto p-5 rounded-2xl shadow-xl bg-[#7077A1]">
+            <h1 class="text-[#F6B17A] text-5xl font-bold py-2 custom">Full Stack Web Developer</h1>
+            <h1 class="text-white text-2xl font-medium py-2 custom">Lorenzo Martin Del Hoyo</h1>
+            <p class="text-white font-normal border border-black shadow-md shadow-black p-3 rounded-lg custom-text">
                 Hello and thanks for checking out my portfolio! I'm dedicated about creating innovative solutions through web application development. With a sharp attention to detail and a commitment to excellence, I aim to craft digital experiences that not only meet but exceed expectations.
             </p>
         </div>
     </div>
 
     <!-- location -->
-    <div data-aos="fade-right" data-aos-duration="3000" class="flex justify-around items-center mt-8 p-5 rounded-2xl shadow-xl bg-[#FAF0E6]">
+    <div class="custom flex gap-4 md:flex-row md:gap-0 flex-col justify-around items-center mt-8 p-5 rounded-2xl shadow-xl border border-black bg-[#7077A1]">
         <img class="h-16" src="https://www.svgrepo.com/show/530236/location.svg" alt="location icon" />
-        <h1 class="text-2xl font-bold">Mar del Plata, Argentina</h1>
-        <img class="rounded-md h-20" src="../../../../assets/argentinaFlag.png" alt="argentinian flag"/>
+        <h1 class="text-white text-2xl font-bold hidden md:visible">Mar del Plata | Argentina</h1>
+        <div class="flex flex-col items-center gap-2 text-white text-2xl font-bold visible md:hidden">
+            <h1>Mar del Plata</h1> 
+            <h1>Argentina</h1>
+        </div>
+        <img class="rounded-md h-20 border border-black" src="../../../../assets/argentinaFlag.png" alt="argentinian flag"/>
     </div>
+
+    <!-- skills -->
+    <div data-aos-duration="3000" class="md:grid md:grid-cols-3 flex flex-col mt-8 py-5 gap-5">
+        
+        <div class="h-auto p-4 w-auto bg-[#7077A1] rounded-xl shadow-xl text-white">
+            <h1 class="flex justify-center items-center font-semibold text-xl pb-1 custom">Frontend</h1>
+            <div class="border-b-2 border-black w-full mb-2"></div>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 custom-text" >
+                <li class="flex items-center">
+                    <span class="text-black pr-1">■</span>JavaScript
+                </li>
+                <li class="flex items-center">
+                    <span class="text-black pr-1">■</span> TypeScript
+                </li>
+                <li class="flex items-center">
+                    <span class="text-black pr-1">■</span> React
+                </li>
+                <li class="flex items-center">
+                    <span class="text-black pr-1">■</span> Angular
+                </li>
+                <li class="flex items-center">
+                    <span class="text-black pr-1">■</span> Tailwind CSS
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="h-auto p-4 w-auto bg-[#7077A1] rounded-xl shadow-xl text-white">
+                <h1 class="flex justify-center items-center font-semibold text-xl pb-1 custom">Backend</h1>
+                <div class="border-b-2 border-black w-full mb-2"></div>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 custom-text">
+                    <li class="flex items-center">
+                        <span class="text-black pr-1">■</span> JavaScript
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-black pr-1">■</span> TypeScript
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-black pr-1">■</span> Nodejs
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-black pr-1">■</span> Express
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-black pr-1">■</span> Prisma
+                    </li>
+                </ul>
+        </div>
+
+        <div class="h-auto p-4 w-auto bg-[#7077A1] rounded-xl shadow-xl text-white">
+                <h1 class="flex justify-center items-center font-semibold text-xl pb-1 custom">Languages</h1>
+                <div class="border-b-2 border-black w-full mb-2"></div>
+                <ul class="grid grid-cols-1 gap-2 p-1 custom-text">
+                    <li class="flex items-center">
+                        <span class="text-black pr-1">■</span> English - C1 Advance
+                        <a href="https://www.efset.org/cert/L59bz9" target="_blank">
+                            <svg class="mx-2 h-5" fill="#ffffff" viewBox="0 0 16 16" id="external-link-16px" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Path_113" data-name="Path 113" d="M37,9.5v4A2.5,2.5,0,0,1,34.5,16h-11A2.5,2.5,0,0,1,21,13.5V2.5A2.5,2.5,0,0,1,23.5,0h4a.5.5,0,0,1,0,1h-4A1.5,1.5,0,0,0,22,2.5v11A1.5,1.5,0,0,0,23.5,15h11A1.5,1.5,0,0,0,36,13.5v-4a.5.5,0,0,1,1,0ZM36.962.309A.5.5,0,0,0,36.5,0h-5a.5.5,0,0,0,0,1h3.793L25.146,11.146a.5.5,0,0,0,.708.708L36,1.707V5.5a.5.5,0,0,0,1,0V.5A.5.5,0,0,0,36.962.309Z" transform="translate(-21)"></path> </g></svg>
+                        </a>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-black pr-1">■</span> Portuguese - A1 Basic
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-black pr-1">■</span> Spanish - Native
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+
     
     <!-- education -->
-    <div class="flex h-full w-full">
-        <div data-aos="fade-down" data-aos-duration="3000" class="flex flex-col justify-center w-40 bg-[#FAF0E6] rounded-2xl my-8 p-8 mr-5">
+    <div class="flex md:flex-row flex-col h-full w-full">
+        <div class="flex flex-col justify-center w-full md:w-40 bg-[#7077A1] rounded-2xl my-8 p-8 mr-5">
             <img class="h-20 text-white" src="https://www.svgrepo.com/show/454726/cap-education-hat.svg" alt="Education logo" />
         </div>
-        <ol data-aos="fade-up" data-aos-duration="3000" class="flex justify-center w-full sm:flex my-8 p-8 bg-[#FAF0E6] rounded-2xl">
-                <li class="relative mb-6 sm:mb-0">
+        
+        <ol class="flex md:flex-row flex-col justify-center w-full sm:flex my-8 p-10 bg-[#7077A1] rounded-2xl">
+                <li class="flex justify-center items-center gap-4 md:gap-0 md:relative mb-6 sm:mb-0">
                     <div class="flex items-center">
-                            <div class="z-10 flex items-center justify-center w-8 h-8 bg-blue-600 rounded-full ring-0 ring-black sm:ring-8 shrink-0">
-                                <svg viewBox="0 0 24 24" width=26px fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                            </div>
-                            <div class="hidden sm:flex w-full bg-gray-700 h-0.5 dark:bg-gray-700"></div>
+                            <div class="z-10 flex items-center justify-center w-3 h-3 border border-white bg-black rounded-full shrink-0"></div>
+                            <div class="hidden sm:flex w-full bg-gray-700 h-0.5"></div>
                     </div>
-                    <div class="mt-3 sm:pe-8">
-                            <h3 class="text-lg font-semibold">Angular Course</h3>
-                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jan 2024</time>
-                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Platzi</p>
+                    <div class="h-full w-full flex flex-col justify-between mt-3 pr-4">
+                            <h3 class="text-white text-lg font-semibold">Angular Course</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-slate-200">Jan 2024</time>
+                            <p class="text-base font-normal text-slate-300">Platzi</p>
                     </div>
                 </li>
-                <li class="relative mb-6 sm:mb-0">
+                <li class="flex justify-center items-center gap-4 md:gap-0 md:relative mb-6 sm:mb-0">
                         <div class="flex items-center">
-                            <div class="z-10 flex items-center justify-center w-8 h-8 bg-blue-600 rounded-full ring-0 ring-black sm:ring-8 shrink-0">
-                                <svg viewBox="0 0 24 24" width=26px fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                            </div>
-                            <div class="hidden sm:flex w-full bg-gray-700 h-0.5 dark:bg-gray-700"></div>
+                            <div class="z-10 flex items-center justify-center w-3 h-3 border border-white bg-black rounded-full shrink-0"></div>
+                            <div class="hidden sm:flex w-full bg-gray-700 h-0.5"></div>
                         </div>
-                        <div class="mt-3 sm:pe-8">
-                            <h3 class="text-lg font-semibold">Full Stack Web Development</h3>
-                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
-                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Henry Bootcamp</p>
+                        <div class="h-full w-full flex flex-col justify-between mt-3 pr-2">
+                            <h3 class="text-white text-lg font-semibold">Full Stack Web Development</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-slate-200">May-Sept 2023</time>
+                            <p class="text-base font-normal text-slate-300">Henry Bootcamp</p>
                         </div>
                 </li>
-                <li class="relative mb-6 sm:mb-0">
+                <li class="flex justify-center items-center gap-4 md:gap-0 md:relative mb-6 sm:mb-0">
                     <div class="flex items-center">
-                            <div class="z-10 flex items-center justify-center w-8 h-8 bg-blue-600 rounded-full ring-0 ring-black sm:ring-8 shrink-0">
-                                <svg viewBox="0 0 24 24" width=26px fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                            </div>
-                            <div class="hidden sm:flex w-full bg-gray-700 h-0.5 dark:bg-gray-700"></div>
+                        <div class="z-10 flex items-center justify-center w-3 h-3 border border-white bg-black rounded-full shrink-0"></div>
+                        <div class="hidden sm:flex w-full bg-gray-700 h-0.5"></div>
                     </div>
-                    <div class="mt-3 sm:pe-8">
-                            <h3 class="text-lg font-semibold">Chemical Engineering</h3>
-                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2017-2022</time>
-                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">National University of Mar del Plata</p>
+                    <div class="h-full w-full flex flex-col justify-between mt-3 pr-2">
+                            <h3 class="text-white text-lg font-semibold">Chemical Engineering</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-slate-200">2017-2022</time>
+                            <p class="text-base font-normal text-slate-300">National University of Mar del Plata</p>
                     </div>
                 </li>
         </ol>
@@ -68,64 +137,57 @@
 
     <!-- work experience -->
     
-    <div class="flex h-full w-full">
-        <div data-aos="fade-down" data-aos-duration="3000" class="flex flex-col justify-center w-40 bg-[#FAF0E6] rounded-2xl mb-10 p-8 mr-5">
+    <div class="flex md:flex-row flex-col h-full w-full">
+        <div data-aos="fade-up" data-aos-duration="3000" class="flex flex-col justify-center w-full md:w-40 bg-[#7077A1] rounded-2xl mb-10 p-8 mr-5">
             <img class="h-20 text-white" src="https://www.svgrepo.com/show/283174/mechanics-mechanical.svg" alt="experience logo" />
         </div>
-            <ol data-aos="fade-up" data-aos-duration="3000" class="flex justify-center w-full sm:flex mb-10 p-10 bg-[#FAF0E6] rounded-2xl">
-                <li class="relative mb-6 sm:mb-0">
+
+        <ol data-aos="fade-up" data-aos-duration="3000" class="flex md:flex-row flex-col justify-center w-full  mb-10 p-10 bg-[#7077A1] rounded-2xl">
+                <li class="flex justify-center items-center gap-4 md:gap-0 md:relative mb-6 sm:mb-0">
                     <div class="flex items-center">
-                        <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full ring-0 ring-black sm:ring-8 shrink-0">
-                            <svg fill="#ffffff" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 39.4615 8.1276 C 33.7743 2.4840 22.1821 1.8521 15.5362 8.5416 C 14.4467 9.6093 14.6428 10.8295 15.3836 11.5704 C 15.9066 12.1151 16.7346 12.3548 17.5191 12.1151 C 22.1603 10.6552 26.4529 10.5245 29.8739 13.0521 L 28.0436 17.9330 C 27.3463 19.8288 27.7167 21.1579 28.9587 22.4217 L 33.9922 27.4770 C 34.9945 28.5011 36.1059 28.8062 37.5658 28.4575 L 41.0959 27.6513 L 42.7953 29.3510 L 42.5119 31.8350 C 42.3597 32.8591 42.4905 33.4910 43.3839 34.3844 L 45.0832 36.0187 C 46.0204 36.9556 47.2186 37.0428 48.1120 36.1494 L 55.1066 29.1984 C 56 28.3050 55.8692 27.1066 54.9540 26.1478 L 53.2765 24.4700 C 52.4264 23.5984 51.7512 23.4241 50.7703 23.5766 L 48.2646 23.8817 L 46.5434 22.2257 L 47.5889 18.4778 C 47.9161 17.2576 47.5019 16.1245 46.1944 14.8389 Z M 2.2225 44.8000 C .1089 46.6739 0 48.6350 1.9611 50.6179 L 5.4257 54.0607 C 7.3650 56 9.3914 55.8910 11.2436 53.7992 L 32.2273 30.2443 L 25.7774 23.8163 Z"></path></g></svg>
-                        </div>
-                        <div class="hidden sm:flex w-full bg-gray-700 h-0.5 dark:bg-gray-700"></div>
+                        <div class="z-10 flex items-center justify-center w-3 h-3 border border-white bg-black rounded-full shrink-0"></div>
+                        <div class="hidden sm:flex w-full bg-gray-700 h-0.5"></div>
                     </div>
-                    <div class="mt-3 sm:pe-8">
-                        <h3 class="text-lg font-semibold">Front of House</h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">dic 2022 - apr 2023</time>
-                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Vail Resorts</p>
+                    <div class="h-full w-full flex flex-col justify-between mt-3 sm:pe-8">
+                        <h3 class="text-white text-lg font-bold">Front of House</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-slate-200">dic 2022 - apr 2023</time>
+                        <p class="text-base font-normal text-slate-300">Vail Resorts</p>
                     </div>
                 </li>
-                <li class="relative mb-6 sm:mb-0">
+                <li class="flex justify-center items-center gap-4 md:gap-0 md:relative mb-6 sm:mb-0">
                     <div class="flex items-center">
-                        <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full ring-0 ring-black sm:ring-8 shrink-0">
-                            <svg fill="#ffffff" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 39.4615 8.1276 C 33.7743 2.4840 22.1821 1.8521 15.5362 8.5416 C 14.4467 9.6093 14.6428 10.8295 15.3836 11.5704 C 15.9066 12.1151 16.7346 12.3548 17.5191 12.1151 C 22.1603 10.6552 26.4529 10.5245 29.8739 13.0521 L 28.0436 17.9330 C 27.3463 19.8288 27.7167 21.1579 28.9587 22.4217 L 33.9922 27.4770 C 34.9945 28.5011 36.1059 28.8062 37.5658 28.4575 L 41.0959 27.6513 L 42.7953 29.3510 L 42.5119 31.8350 C 42.3597 32.8591 42.4905 33.4910 43.3839 34.3844 L 45.0832 36.0187 C 46.0204 36.9556 47.2186 37.0428 48.1120 36.1494 L 55.1066 29.1984 C 56 28.3050 55.8692 27.1066 54.9540 26.1478 L 53.2765 24.4700 C 52.4264 23.5984 51.7512 23.4241 50.7703 23.5766 L 48.2646 23.8817 L 46.5434 22.2257 L 47.5889 18.4778 C 47.9161 17.2576 47.5019 16.1245 46.1944 14.8389 Z M 2.2225 44.8000 C .1089 46.6739 0 48.6350 1.9611 50.6179 L 5.4257 54.0607 C 7.3650 56 9.3914 55.8910 11.2436 53.7992 L 32.2273 30.2443 L 25.7774 23.8163 Z"></path></g></svg>
-                        </div>
-                        <div class="hidden sm:flex w-full bg-gray-700 h-0.5 dark:bg-gray-700"></div>
+                        <div class="z-10 flex items-center justify-center w-3 h-3 border border-white bg-black rounded-full shrink-0"></div>
+                        <div class="hidden sm:flex w-full bg-gray-700 h-0.5"></div>
                     </div>
-                    <div class="mt-3 sm:pe-8">
-                        <h3 class="text-lg font-semibold">Ski Technician</h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">dic 2021- apr 2022</time>
-                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Aloha Ski & Snowboard</p>
+                    <div class="h-full w-full flex flex-col justify-between mt-3 sm:pr-2">
+                        <h3 class="text-white text-lg font-semibold">Ski Technician</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-slate-200">dic 2021- apr 2022</time>
+                        <p class="text-base font-normal text-slate-300">Aloha Ski & Snowboard</p>
                     </div>
                 </li>
-                <li class="relative mb-6 sm:mb-0">
+                <li class="flex justify-center items-center gap-4 md:gap-0 md:relative mb-6 sm:mb-0">
                     <div class="flex items-center">
-                        <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full ring-0 ring-black sm:ring-8 shrink-0">
-                            <svg fill="#ffffff" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 39.4615 8.1276 C 33.7743 2.4840 22.1821 1.8521 15.5362 8.5416 C 14.4467 9.6093 14.6428 10.8295 15.3836 11.5704 C 15.9066 12.1151 16.7346 12.3548 17.5191 12.1151 C 22.1603 10.6552 26.4529 10.5245 29.8739 13.0521 L 28.0436 17.9330 C 27.3463 19.8288 27.7167 21.1579 28.9587 22.4217 L 33.9922 27.4770 C 34.9945 28.5011 36.1059 28.8062 37.5658 28.4575 L 41.0959 27.6513 L 42.7953 29.3510 L 42.5119 31.8350 C 42.3597 32.8591 42.4905 33.4910 43.3839 34.3844 L 45.0832 36.0187 C 46.0204 36.9556 47.2186 37.0428 48.1120 36.1494 L 55.1066 29.1984 C 56 28.3050 55.8692 27.1066 54.9540 26.1478 L 53.2765 24.4700 C 52.4264 23.5984 51.7512 23.4241 50.7703 23.5766 L 48.2646 23.8817 L 46.5434 22.2257 L 47.5889 18.4778 C 47.9161 17.2576 47.5019 16.1245 46.1944 14.8389 Z M 2.2225 44.8000 C .1089 46.6739 0 48.6350 1.9611 50.6179 L 5.4257 54.0607 C 7.3650 56 9.3914 55.8910 11.2436 53.7992 L 32.2273 30.2443 L 25.7774 23.8163 Z"></path></g></svg>
-                        </div>
-                        <div class="hidden sm:flex w-full bg-gray-700 h-0.5 dark:bg-gray-700"></div>
+                        <div class="z-10 flex items-center justify-center w-3 h-3 border border-white bg-black rounded-full shrink-0"></div>
+                        <div class="hidden sm:flex w-full bg-gray-700 h-0.5"></div>
                     </div>
-                    <div class="mt-3 sm:pe-8">
-                        <h3 class="text-lg font-semibold">Front Desk</h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">dic 2021- apr 2022</time>
-                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Yotel Pad</p>
+                    <div class="h-full w-full flex flex-col justify-between mt-3 sm:pe-8">
+                        <h3 class="text-white text-lg font-semibold">Front Desk</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-slate-200">dic 2021- apr 2022</time>
+                        <p class="text-base font-normal text-slate-300">Yotel Pad</p>
                     </div>
                 </li>
-                <li class="relative mb-6 sm:mb-0">
+                <li class="flex justify-center items-center gap-4 md:gap-0 md:relative mb-6 sm:mb-0">
                     <div class="flex items-center">
-                        <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full ring-0 ring-black sm:ring-8 shrink-0">
-                            <svg fill="#ffffff" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 39.4615 8.1276 C 33.7743 2.4840 22.1821 1.8521 15.5362 8.5416 C 14.4467 9.6093 14.6428 10.8295 15.3836 11.5704 C 15.9066 12.1151 16.7346 12.3548 17.5191 12.1151 C 22.1603 10.6552 26.4529 10.5245 29.8739 13.0521 L 28.0436 17.9330 C 27.3463 19.8288 27.7167 21.1579 28.9587 22.4217 L 33.9922 27.4770 C 34.9945 28.5011 36.1059 28.8062 37.5658 28.4575 L 41.0959 27.6513 L 42.7953 29.3510 L 42.5119 31.8350 C 42.3597 32.8591 42.4905 33.4910 43.3839 34.3844 L 45.0832 36.0187 C 46.0204 36.9556 47.2186 37.0428 48.1120 36.1494 L 55.1066 29.1984 C 56 28.3050 55.8692 27.1066 54.9540 26.1478 L 53.2765 24.4700 C 52.4264 23.5984 51.7512 23.4241 50.7703 23.5766 L 48.2646 23.8817 L 46.5434 22.2257 L 47.5889 18.4778 C 47.9161 17.2576 47.5019 16.1245 46.1944 14.8389 Z M 2.2225 44.8000 C .1089 46.6739 0 48.6350 1.9611 50.6179 L 5.4257 54.0607 C 7.3650 56 9.3914 55.8910 11.2436 53.7992 L 32.2273 30.2443 L 25.7774 23.8163 Z"></path></g></svg>
-                        </div>
-                        <div class="hidden sm:flex w-full bg-gray-700 h-0.5 dark:bg-gray-700"></div>
+                        <div class="z-10 flex items-center justify-center w-3 h-3 border border-white bg-black rounded-full shrink-0"></div>
+                        <div class="hidden sm:flex w-full bg-gray-700 h-0.5"></div>
                     </div>
-                    <div class="mt-3 sm:pe-8">
-                        <h3 class="text-lg font-semibold">Ski Valet</h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">dic 2018- ap 2019</time>
-                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Westgate Resorts</p>
+                    <div class="h-full w-full flex flex-col justify-between mt-3 sm:pe-8">
+                        <h3 class="text-white text-lg font-semibold">Ski Valet</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-slate-200">dic 2018- apr 2019</time>
+                        <p class="text-base font-normal text-slate-300">Westgate Resorts</p>
                     </div>
                 </li>
-            </ol>
+        </ol>
 
     </div>
 </div>

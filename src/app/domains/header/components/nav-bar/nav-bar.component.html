@@ -1,5 +1,5 @@
-<div class="sticky top-3 mx-auto w-[30%] transition-transform duration-700 ease-in-out" [class.blurred]="isBlurred">
-        <div class="flex justify-around items-center border-[0.5px] gap-10 mb-2 p-2 rounded-xl shadow-2xl bg-gray-600 text-white custom">
+<div class="sticky top-3 mx-auto w-[80%] md:w-[30%] transition-transform duration-700 ease-in-out" [class.blurred]="isBlurred">
+        <div class="flex justify-center md:justify-around w-full items-center border-[0.5px] gap-10 mb-2 p-2 rounded-xl shadow-2xl bg-gray-800 text-white custom">
             <div routerLink="" routerLinkActive="bg-gray-100 rounded-lg text-black transform translate-x-4" 
             [routerLinkActiveOptions]="{ exact: true }" 
             class="group relative cursor-pointer p-2 px-4 transition-transform duration-700 ease-in-out hover:bg-gray-100 hover:rounded-lg hover:text-black hover:cursor-pointer"
@@ -10,13 +10,6 @@
                     <div class="bg-inherit rotate-45 p-1 absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2"></div>
                 </div>
             </div>
-
-            <!-- <div class="group relative bg-zinc-300 p-2 rounded-full">
-                <span>Bottom</span>
-                <div class="bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute -bottom-2 translate-y-full left-1/2 -translate-x-1/2">
-                  <span class="text-zinc-400 whitespace-nowrap">Info</span>
-                <div class="bg-inherit rotate-45 p-1 absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2"></div>
-            </div> -->
                 
             <div routerLink="projects" routerLinkActive="bg-gray-100 rounded-lg text-black transform translate-x-4" 
             class="group relative h-full cursor-pointer p-2 px-4 transition-transform duration-700 ease-in-out hover:bg-gray-100 hover:rounded-lg hover:text-black hover:cursor-pointer"
@@ -27,7 +20,8 @@
                     <div class="bg-inherit rotate-45 p-1 absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2"></div>
                 </div>
             </div>
-            <div routerLink="contact" routerLinkActive="bg-gray-100 rounded-lg text-black transform translate-x-4" 
+            
+            <div routerLink="contact" routerLinkActive="bg-gray-100 rounded-lg text-black transform translate-x-2" 
             class="group relative h-full cursor-pointer p-2 px-4 transition-transform duration-700 ease-in-out hover:bg-gray-100 hover:rounded-lg hover:text-black hover:cursor-pointer"
             >
                 <mat-icon inline style="font-size: 40px;" class="material-symbols-outlined">forward_to_inbox</mat-icon>
@@ -39,8 +33,8 @@
         </div>
 </div>
 
-<div (click)="descargarCV()" class="group absolute top-3 right-10 p-2 rounded-lg border-[0.5px] transition-transform duration-700 ease-in-out hover:cursor-pointer bg-gray-600 hover:bg-gray-100 hover:text-black" [class.blurred]="isBlurred">
-    <img class="h-10" src="https://www.svgrepo.com/show/228753/curriculum-information.svg" alt="download cv icon">
+<div (click)="descargarCV()" class="group hidden md:absolute top-3 right-10 p-2 rounded-lg border-[0.5px] transition-transform duration-700 ease-in-out hover:cursor-pointer bg-gray-800 hover:bg-gray-100 hover:text-black custom" [class.blurred]="isBlurred">
+    <img class="h-[4.5rem]" src="https://www.svgrepo.com/show/228753/curriculum-information.svg" alt="download cv icon">
     <div class="bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute -bottom-2 translate-y-full left-1/2 -translate-x-1/2">
         <span class="text-white whitespace-nowrap">Download CV</span>
         <div class="bg-inherit rotate-45 p-1 absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2"></div>

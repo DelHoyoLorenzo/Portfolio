@@ -1,15 +1,19 @@
-<div class="h-full">
+<!-- <div class="h-full">
     @if (projectOpened() === 1) {
         <app-pokemon-app />
     } @else if (projectOpened() === 2) {
         <app-descuentosya />
     } @else if (projectOpened() === 3) {
         <app-jobtracker />
-    }
+    } -->
+
+    <app-descuentosya />
+    <app-jobtracker />
+    <app-pokemon-app />
     
     <!-- stepper -->
     
-    <div class="fixed right-5 top-[40%]">
+    <!-- <div class="fixed right-5 top-[40%]">
         
         <ol class="flex flex-col justify-center items-center w-full">
             <li class="relative flex flex-col w-full items-center text-blue-600 dark:text-blue-500 after:content-['|'] after:flex after:flex-col after:justify-center after:items-center after:text-5xl after:m-0 after:text-white after:w-full" [ngClass]="{'custom': projectOpened() === 2 || projectOpened() === 3 }">
@@ -43,5 +47,5 @@
         </ol>
     
     
-    </div>
-</div>
+    </div> -->
+<!-- </div> -->
