@@ -23,3 +23,19 @@
 .custom-grid > * {
     max-width: 100%; /* Evita que los elementos se desborden */
 }
+
+@media (max-width: 1200px){
+    .firstContainer{
+        flex-direction: column-reverse;
+    }
+    .firstContainer .image{
+        width: 100%;
+        height: 50%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .image{
+        width: 100%;
+    }
+}
