@@ -1,6 +1,6 @@
 <div class="pt-5 pb-10">
 
-    <div class="custom-title custom-font md:grid md:grid-cols-2 md:gap-4 md:justify-between md:items-center mt-16 mb-10 border-2 rounded-2xl text-white w-[80%] md:h-auto md:w-[50%] mx-auto">
+    <div class="custom-title custom-font md:grid md:grid-cols-2 md:gap-4 md:justify-between md:items-center mt-16 mb-10 border-2 rounded-2xl text-white w-[80%] md:h-auto md:w-[55%] mx-auto">
         <h1 class="h-full custom flex items-center justify-center md:flex md:flex-col pl-5">Descuentos Ya</h1>
         <div class="h-full flex flex-col bg-[#23283E] border-t-2 md:border-l-2 p-2 md:p-5 rounded-t-2xl rounded-r-2xl rounded-b-xl md:rounded-r-2xl md:rounded-l-[2rem] w-full md:w-[100%]">
         
@@ -50,36 +50,36 @@
 
 <!-- info boxes -->
 
-    <div class="text-white flex md:grid md:grid-cols-3 md:gap-8 flex-col justify-between gap-10 items-center w-[80%] md:w-1/2 md:h-40 m-auto mt-10 pb-2">
-        <div class="card">
+    <div class="text-white flex md:grid md:grid-cols-3 md:gap-8 flex-col justify-between gap-10 items-center w-[80%] md:w-[55%] md:h-40 m-auto mt-10 pb-2">
+        <div (touchstart)="toggleRotate('cardOne')" [ngClass]="{'rotate': rotateCard.cardOne}" class="card">
             <div class="content">
-            <div class="back">
-                <div class="back-content text-xl font-semibold">
-                <strong>Features</strong>
+                <div class="back">
+                    <div class="back-content text-xl font-semibold">
+                    <strong>Features</strong>
+                    </div>
                 </div>
-            </div>
-            <div class="front overflow-y-auto">
-                <div class="flex flex-col p-2 text-black custom-font">
-                    <ul class="text-white">
-                        <li class="m-1">
-                        <span class="text-2xl p-1">.</span>Users can leave reviews and provide
-                        ratings for products.
-                        </li>
-                        <li class="m-1">
-                            <span class="text-2xl p-1">.</span>Location-based feature that displays the distance between users and the companies they are browsing.
-                        </li>
-                        <li class="m-1">
-                            <span class="text-2xl p-1">.</span>Simulated payment method and virtual wallet feature.
-                        </li>
-                        <li class="m-1">
-                            <span class="text-2xl p-1">.</span>Admin functionality to enable or disable users and companies.
-                        </li>
-                    </ul>
+                <div class="front overflow-y-auto">
+                    <div class="flex flex-col p-2 text-black custom-font">
+                        <ul class="text-white">
+                            <li class="m-1">
+                            <span class="text-2xl p-1">.</span>Users can leave reviews and provide
+                            ratings for products.
+                            </li>
+                            <li class="m-1">
+                                <span class="text-2xl p-1">.</span>Location-based feature that displays the distance between users and the companies they are browsing.
+                            </li>
+                            <li class="m-1">
+                                <span class="text-2xl p-1">.</span>Simulated payment method and virtual wallet feature.
+                            </li>
+                            <li class="m-1">
+                                <span class="text-2xl p-1">.</span>Admin functionality to enable or disable users and companies.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
-        <div class="card">
+        <div (touchstart)="toggleRotate('cardTwo')" [ngClass]="{'rotate': rotateCard.cardTwo}" class="card">
             <div class="content">
             <div class="back">
                 <div class="back-content text-xl font-semibold">
@@ -109,7 +109,7 @@
             </div>
             </div>
         </div>
-        <div class="card">
+        <div (touchstart)="toggleRotate('cardThree')" [ngClass]="{'rotate': rotateCard.cardThree}" class="card" class="card">
             <div class="content">
             <div class="back">
                 <div class="back-content text-xl font-semibold">

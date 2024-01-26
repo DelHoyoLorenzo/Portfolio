@@ -11,7 +11,7 @@
 
 .custom {
   font-family: 'VT323', monospace;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 300;
 }
 
@@ -23,119 +23,116 @@
   transform: scale(1.02) 
 }
   
-  @media(max-width: 768px){
-    .custom-title{
-      flex-direction: column;
-    }
+@media(max-width: 768px){
+  .custom-title{
+    flex-direction: column;
+  }
   
-    .custom {
-      font-size: 3rem;
-    }
+  .custom {
+    font-size: 3rem;
   }
 
-  .card {
-    height: 100%;
-    width: 100%;
-    overflow: visible;
+}
+
+/* ---------------------card------------------------- */
+
+.card {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 800ms;
+  box-shadow: 0px 0px 5px 1px #000000ee;
+  border-radius: 1rem;
+  
+  transform-style: preserve-3d; /*importante, no rota la card sino */
+}
+
+.front {
+  background-color: #7077A1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.back {
+  background-color: #7077A1;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.front-content {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card:hover .content,
+.card.rotate .content {
+  transform: rotateY(180deg);
+}
+
+.card:not(.rotate) .content {
+  transform: rotateY(0deg);
+}
+
+@media(max-width: 768px){
+  .card{
+    height: 150px;
+  }
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
   }
   
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 800ms;
-    box-shadow: 0px 0px 5px 1px #000000ee;
-    border-radius: 1rem;
+  0% {
+    transform: rotateZ(360deg);
   }
-  
-  .front, .back {
-    background-color: #7077A1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    border-radius: 1rem;
-  }
-  
-  @media(max-width: 768px){
-    .card{
-      height: 150px;
-    }
-  }
-  
-  .front::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  .front::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 6px;
-  }
-  
-  .front::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-  
-  .back {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  .back::before {
-    position: absolute;
-    content: ' ';
-    display: block;
-    width: 160px;
-    height: 160%;
-    animation: rotation_481 5000ms infinite linear;
-  }
-  
-  .back-content {
-    position: absolute;
-    width: 99%;
-    height: 99%;
-    background-color: #7077A1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .card:hover .content {
-    transform: rotateY(180deg);
-  }
-  
-  @keyframes rotation_481 {
-    0% {
-      transform: rotateZ(0deg);
-    }
-  
-    0% {
-      transform: rotateZ(360deg);
-    }
-  }
-  
-  .front {
-    transform: rotateY(180deg);
-    color: white;
-  }
-  
-  .front .front-content {
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
+}
+
+.front::-webkit-scrollbar {
+  width: 12px;
+}
+
+.front::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.front::-webkit-scrollbar-track {
+  background-color: transparent;
+}
