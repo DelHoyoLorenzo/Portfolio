@@ -62,7 +62,7 @@
   height: 100%;
   backface-visibility: hidden;
   border-radius: 1rem;
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
   color: white;
 }
 
@@ -103,13 +103,13 @@
   justify-content: space-between;
 }
 
-.card:hover .content,
-.card.rotate .content {
-  transform: rotateY(180deg);
+
+.card.rotate  .content{
+  transform: rotateX(180deg);
 }
 
-.card:not(.rotate) .content {
-  transform: rotateY(0deg);
+.card:not(.rotate)  .content{
+  transform: rotateX(0deg);
 }
 
 @media(max-width: 768px){
@@ -123,8 +123,8 @@
     transform: rotateZ(0deg);
   }
   
-  0% {
-    transform: rotateZ(360deg);
+  100% {
+    transform: rotateZ(180deg);
   }
 }
 
