@@ -77,6 +77,10 @@
   overflow: hidden;
 }
 
+.content:hover .back{
+  background-color: #23283E;
+}
+
 .back-content {
   position: absolute;
   width: 100%;
@@ -125,12 +129,12 @@
 }
 
 .front::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 .front::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 6px;
+  background-color: #F6B17A;
+  border-radius: 4px;
 }
 
 .front::-webkit-scrollbar-track {

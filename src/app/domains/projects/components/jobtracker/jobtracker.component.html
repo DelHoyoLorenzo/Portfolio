@@ -49,40 +49,44 @@
     <!-- info boxes -->
     
     <div class="text-white flex md:grid md:grid-cols-3 md:gap-8 flex-col justify-between gap-10 items-center w-[80%] md:w-[55%] md:h-40 m-auto mt-10 pb-2">
-        <div (touchstart)="toggleRotate('cardOne')" [ngClass]="{'rotate': rotateCard.cardOne}" class="card">
+        <div (touch)="toggleRotate('cardOne')" (click)="toggleRotate('cardOne')" [ngClass]="{'rotate': rotateCard.cardOne}" class="card hover:cursor-pointer">
             <div class="content">
               <div class="back">
                 <div class="back-content text-xl font-semibold">
                   <strong>Features</strong>
+                  <div class="w-[70%] flex justify-center border-b border-white"></div>
                 </div>
               </div>
               <div class="front overflow-y-auto">
-                <div class="flex flex-col p-2 text-black">
+                <div class="flex flex-col p-2">
                     <ul class="text-white">
                         <li class="m-1">
-                           <span class="text-2xl p-1">.</span>Centralized dashboard displaying all
+                           <span class="text-4xl p-1 text-black">.</span>Centralized dashboard displaying all
                            the job offers that users have applied
                            to or are considering.
                         </li>
+                        <div class="w-[100%] my-2 flex justify-center border-b border-white"></div>
                         <li class="m-1">
-                            <span class="text-2xl p-1">.</span> Upload and store essential
+                            <span class="text-4xl p-1 text-black">.</span> Upload and store essential
                             documents, including resumes, cover
                             letters, recommendation letters, and
                             any other relevant files.
                         </li>
+                        <div class="w-[100%] my-2 flex justify-center border-b border-white"></div>
                         <li class="m-1">
-                            <span class="text-2xl p-1">.</span> 100% Responsive App
+                            <span class="text-4xl p-1 text-black">.</span> 100% Responsive App
                         </li>
                     </ul>
                 </div>
               </div>
             </div>
         </div>
-        <div (touchstart)="toggleRotate('cardTwo')" [ngClass]="{'rotate': rotateCard.cardTwo}" class="card">
+        <div (touch)="toggleRotate('cardTwo')" (click)="toggleRotate('cardTwo')" [ngClass]="{'rotate': rotateCard.cardTwo}" class="card hover:cursor-pointer">
             <div class="content">
               <div class="back">
                 <div class="back-content text-xl font-semibold">
                   <strong>Technologies</strong>
+                  <div class="w-[70%] flex justify-center border-b border-white"></div>
                 </div>
               </div>
               <div class="front">
@@ -107,7 +111,7 @@
               </div>
             </div>
         </div>
-        <div (touchstart)="toggleRotate('cardThree')" [ngClass]="{'rotate': rotateCard.cardThree}" class="card">
+        <div (touch)="toggleRotate('cardThree')" (click)="toggleRotate('cardThree')" [ngClass]="{'rotate': rotateCard.cardThree}" class="card hover:cursor-pointer">
             <div class="content">
               <div class="back">
                 <div class="back-content text-xl font-semibold">
