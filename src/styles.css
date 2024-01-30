@@ -10,17 +10,3 @@ html,body{
     letter-spacing: 0.03rem;
     background: linear-gradient(to bottom, #424769, #424769, #23283E);
 }
-
-
-/* html::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-html::-webkit-scrollbar-thumb {
-    background-color: gainsboro;
-    border-radius: 6px;
-}
-
-html::-webkit-scrollbar-track{
-    background-color: transparent;
-} */
